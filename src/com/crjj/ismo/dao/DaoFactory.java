@@ -3,7 +3,7 @@ package com.crjj.ismo.dao;
 public class DaoFactory {
 	
 	
-	public IDao getDAO(TypeDao type) {
+	public static IDao getDAO(TypeDao type) {
 		switch (type) {
 			case ENTREPRISE: return new DaoEntreprise();
 			case INVENTEUR: return new DaoInventeur();
